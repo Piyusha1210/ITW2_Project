@@ -11,6 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="course.css">
 </head>
 
 <body>
@@ -52,57 +53,231 @@
     </nav>
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Resources/courses_slider_1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="Resources/courses_slider_2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="Resources/courses_slider_3.gif" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <br>
 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+    <img src="Resources/courses_slider_1.jpg" class="d-block w-500" width="100%" alt="...">
 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <br><br>
+    <div class="whole-parent-div">
+
+        <div class="selector-div">
+            <div class="branch">
+                <h4>Branch</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Computer Science
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Information technology
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Electronics
+                    </li>
+
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Course</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Web Development
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        App Development
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Machine Learning
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        AR / VR
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Designing
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        IOT
+                    </li>
+
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Course type</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Basic
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Intermediate
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Advanced
+                    </li>
+
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Language</h4>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        C++
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Java
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Python
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Kotlin
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Swift
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        JavaScript
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Php
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Software</h4>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Bootstrap
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Git
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Linux
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        VS Code
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        WordPress
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <br><br>
         </div>
+        <div class="card-holder-whole">
+            <div class="card-holder">
+
+                <div class="card card-shadow" style="width: 24rem;">
+                    <img src="Resources/course_card_1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text"> Web development is the work involved in developing a website for the
+                            Internet or an intranet. Web development can range from developing a simple single static
+                            page of plain text to complex web applications, electronic businesses, and social network
+                            services.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card card-shadow" style="width: 24rem;">
+                    <img src="Resources/course_card_2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">App Development</h5>
+                        <p class="card-text">Mobile app development is the act or process by which a mobile app is
+                            developed for mobile devices, such as personal digital assistants, enterprise digital
+                            assistants or mobile phones. These software applications are designed to run on mobile
+                            devices, such as a smartphone or tablet computer.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br><br>
+            <div class="card-holder">
+                <div class="card card-shadow" style="width: 24rem;">
+                    <img src="Resources/course_card_3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">Machine learning is a method of data analysis that automates analytical
+                            model building. It is a branch of artificial intelligence based on the idea that systems can
+                            learn from data, identify patterns and make decisions with minimal human intervention.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card card-shadow" style="width: 24rem;">
+                    <img src="Resources/course_card_4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AR/ VR/ MR</h5>
+                        <p class="card-text">
+                            Augmented reality (AR) adds digital elements to a live view often by using the camera on a
+                            smartphone. ... Virtual reality (VR) implies a complete immersion experience that shuts out
+                            the physical world.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br><br>
+            <div class="card-holder">
+
+                <div class="card card-shadow" style="width: 24rem;">
+                    <img src="Resources/course_card_5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">IOT</h5>
+                        <p class="card-text">The term IoT, or Internet of Things, refers to the collective network of
+                            connected devices and the technology that facilitates communication between devices and the
+                            cloud, as well as between the devices themselves.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card card-shadow" style="width: 24rem;">
+                    <img src="Resources/course_card_6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blockchain</h5>
+                        <p class="card-text">Blockchain is a system of recording information in a way that makes it
+                            difficult or
+                            impossible to change, hack, or cheat the system. A blockchain is essentially a digital
+                            ledger of transactions that is duplicated and distributed.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br><br>
+        </div>
+        <br>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

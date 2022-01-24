@@ -1,0 +1,50 @@
+body
+{
+    margin: 0px;
+    background-color: #f8f9fa;
+}
+.whole-parent-div
+{
+    display: flex;
+    padding: 10px;
+    padding-left: 60px;
+}
+.selector-div
+{
+    /* border: 1px solid black; */
+    width: 20%;
+    /* background-color: beige; */
+}
+h4
+{
+    text-align: center;
+}
+.branch
+{
+    background-color:white;
+    box-shadow: 0px 3px 10px 1px rgb(148, 147, 147);
+    border-radius: 10px
+}
+.branch:hover
+{
+    box-shadow: 0px 3px 15px 5px rgb(148, 147, 147);
+}
+.card-holder-whole
+{
+    width: 80%;
+    padding-left: 30px; 
+    /* padding-right: 20px;  */
+    /* border: 1px solid red; */
+}
+.card-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.card-shadow{
+    box-shadow: 0px 3px 12px 1px rgb(148, 147, 147);
+}
+.card-shadow:hover{
+    box-shadow: 0px 4px 15px 5px rgb(148, 147, 147);
+}
