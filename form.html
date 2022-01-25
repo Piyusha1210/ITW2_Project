@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        td {
+            color: red;
+        }
+
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            color: purple;
+            margin: 0px;
+            background-color: #ecd0cf;
+            background-image: url("form6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: large;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course.html">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <button type="button" class="btn btn-info btn-danger"><a href="login.php"
+                            style="text-decoration: none;color: white;">Log-in</a></button>
+                    <button type="button" class="btn btn-info btn-danger" data-toggle="modal"
+                        data-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+    </nav>
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel" style="color: deeppink;">CREATE YOUR ACCOUNT </h2>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" align="center" style="background-color:aqua;color:mediumvioletred">
+                    <div class="form-group">
+                        <table cellspacing="2" align="center" cellpadding="0" border="0">
+                            <tr style="margin-bottom: 8px;">
+                                <th> Name</th>
+                                <td><input type="text" style="margin-bottom: 8px;margin-left: 5px;"
+                                        placeholder="Enter your name" id="n1"></td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <th>Email </th>
+                                <td><input type="text" style="margin-bottom: 8px;margin-left: 5px;"
+                                        placeholder="Enter your email id" id="e1"></td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <th> Set Password</th>
+                                <td><input type="password" style="margin-bottom: 8px;margin-left: 5px;"
+                                        placeholder="Set a password" id="p1"></td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <th>Confirm Password</th>
+                                <td><input type="password" style="margin-left: 5px;" placeholder="Confirm your password"
+                                        id="p2"></td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Create" onClick="create_account()"
+                                        style="margin-top: 8px;text-align: center;" />
+                                </td>
+                            </tr>
+                            <br>
+                        </table>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    function create_account() {
+                        var n = document.getElementById("n1").value;
+                        var e = document.getElementById("e1").value;
+                        var p = document.getElementById("p1").value;
+                        var cp = document.getElementById("p2").value;
+                        //Code for password validation  
+                        var letters = /^[A-Za-z]+$/;
+                        var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                        //other validations required code  
+                        if (n == '' || e == '' || p == '' || cp == '') {
+                            alert("Enter each details correctly");
+                        }
+                        else if (!letters.test(n)) {
+                            alert('Name is incorrect must contain alphabets only');
+                        }
+                        else if (!email_val.test(e)) {
+                            alert('Invalid email format please enter valid email id');
+                        }
+                        else if (p != cp) {
+                            alert("Passwords not matching");
+                        }
+                        else if (document.getElementById("p1").value.length > 12) {
+                            alert("Password maximum length is 12");
+                        }
+                        else if (document.getElementById("p1").value.length < 6) {
+                            alert("Password minimum length is 6");
+                        }
+                        else {
+                            alert("Your account has been created successfully... Redirecting to Website");
+                            window.location = "home.html";
+                        }
+                    }  
+                </script>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"><a href="form.html"
+                            style="text-decoration: none;color: white;">Close</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="row py-4">
+            <div class="col">
+                <h1> Contact Form</h1>
+            </div>
+        </div>
+        <form name="frmContact" id="frmContact" method="post" action="login.php" enctype="multipart/form-data"
+            novalidate>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Name</label> <span id="userName-info" class="invalid-feedback"></span>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <?php require __DIR__ . '/vendor/bootstrap/bootstrap-icons/person.svg';?>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" name="userName" id="userName" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Email</label> <span id="userEmail-info" class="invalid-feedback"></span>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <?php require __DIR__ . '/vendor/bootstrap/bootstrap-icons/envelope.svg';?>
+                            </span>
+                        </div>
+                        <input type="email" name="userEmail" id="userEmail" class="form-control" required>
+                    </div>
+                    <small id="emailHelp" class="form-text text-muted"><b style="color: red;">Your email will
+                            not be shared.</b></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <label>Subject</label> <span id="subject-info" class="invalid-feedback"></span>
+                    <div class="input-group">
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <?php require __DIR__ . '/vendor/bootstrap/bootstrap-icons/question.svg';?>
+                            </span>
+                        </div>
+                        <input type="text" name="subject" id="subject" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <label>Message</label> <span id="content-info" class=" invalid-feedback"></span>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <?php require __DIR__ . '/vendor/bootstrap/bootstrap-icons/pencil.svg';?>
+                            </span>
+                        </div>
+                        <textarea class="form-control" rows="5" name="message" id="message" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="submit" name="send" class="btn btn-primary" value="Send Message" />
+                </div>
+            </div>
+            <!--
+                    <?php
+if (! empty($displayMessage)) {
+    ?>
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="statusMessage" class="alert alert-success mt-3" role="alert">
+                        <?php echo $displayMessage; ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+}
+?>
+-->
+        </form>
+    </div>
+    <!--  <script type="text/javascript" src="validation.js"></script> -->
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var form = document.getElementById('frmContact');
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        setValidationResponse();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            }, false);
+        })();
+
+        var userName = document.getElementById("userName").value;
+        var userEmail = document.getElementById("userEmail").value;
+        var subject = document.getElementById("subject").value;
+        var content = document.getElementById("message").value;
+
+        function setValidationResponse() {
+            var emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            //var userName = document.getElementById("userName").value;
+            //var userEmail = document.getElementById("userEmail").value;
+            //var subject = document.getElementById("subject").value;
+            //var content = document.getElementById("message").value;
+
+            if (userName == "") {
+                markAsInvalid("userName", "required");
+            } else {
+                markAsValid("userName");
+            }
+
+            if (userEmail == "") {
+                markAsInvalid("userEmail", "required");
+            } else if (!emailRegex.test(userEmail)) {
+                markAsInvalid("userEmail", "invalid");
+            } else {
+                markAsValid("userEmail");
+            }
+            if (subject == "") {
+                markAsInvalid("subject", "required");
+            } else {
+                markAsValid("subject");
+            }
+
+            if (content == "") {
+                markAsInvalid("content", "required");
+            } else {
+                markAsValid("content");
+            }
+        }
+        function markAsValid(id) {
+            document.getElementById(id + "-info").style.display = "none";
+        }
+
+        function markAsInvalid(id, feedback) {
+            document.getElementById(id + "-info").style.display = "inline";
+            document.getElementById(id + "-info").innerText = feedback;
+        }
+    </script>
+
+</body>
+
+</html>
