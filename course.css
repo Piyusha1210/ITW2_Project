@@ -3,6 +3,10 @@ body
     margin: 0px;
     background-color: #f8f9fa;
 }
+.header-img
+{
+    position: fixed;
+}
 .whole-parent-div
 {
     display: flex;
@@ -22,19 +26,18 @@ h4
 .branch
 {
     background-color:white;
-    box-shadow: 0px 3px 10px 1px rgb(148, 147, 147);
+    box-shadow: 0px 2px 10px 1px rgb(148, 147, 147);
     border-radius: 10px
 }
 .branch:hover
 {
+    transition: all 1s;
     box-shadow: 0px 3px 15px 5px rgb(148, 147, 147);
 }
 .card-holder-whole
 {
     width: 80%;
-    padding-left: 30px; 
-    /* padding-right: 20px;  */
-    /* border: 1px solid red; */
+    padding-left: 30px;
 }
 .card-holder{
     display: flex;
@@ -43,8 +46,9 @@ h4
     
 }
 .card-shadow{
-    box-shadow: 0px 3px 12px 1px rgb(148, 147, 147);
+    box-shadow: 0px 2px 10px 1px rgb(148, 147, 147);
 }
 .card-shadow:hover{
+    transition: all 1s;
     box-shadow: 0px 4px 15px 5px rgb(148, 147, 147);
 }

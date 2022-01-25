@@ -1,0 +1,81 @@
+body{
+    background-color: #f8f9fa;
+    margin: 0px;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  
+  
+  h1{
+    text-align: center;
+  }
+  .flex-parent
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  
+.flex-child{
+    width: 25%;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 1px rgb(148, 147, 147);
+}
+.flex-child:hover{
+    transition: all, 1s;
+    box-shadow: 0px 4px 15px 5px rgb(148, 147, 147);
+}
+.club-photo 
+{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65%;
+}
+.club-name
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Ace
+{
+  background-image: url("resources/clubs/ace.png");
+}
+.Dot-slash
+{
+  background-image: url("resources/clubs/dotslash.jpg");
+}
+.skills-nights
+{
+  background-image: url("resources/clubs/skills-nights.jpeg");
+}
+.probe
+{
+  background-image: url("resources/clubs/probe.png");
+}
+.strokes
+{
+  background-image: url("resources/clubs/strokes.png");
+}
+.dimensions
+{
+  background-image: url("resources/clubs/dimensions.png");
+}
+.eklavya
+{
+  background-image: url("resources/clubs/eklavya.png");
+}
+.iotics
+{
+  background-image: url("resources/clubs/iotics.png");
+}
+.orator
+{
+  background-image: url("resources/clubs/orator.png");
+}
