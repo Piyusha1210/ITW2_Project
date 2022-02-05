@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIITN</title>
+    <link rel="icon" href="Resources/index/logo.png">
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="student_life.css">
+    <link rel="icon" href="Resources/index/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="myfun()" onunload="myfunc()">
+    <script>
+        function myfun() {
+            alert("Hello User,\nWelcome To Our Student Life Page.");
+        }
+    </script>
+    <section class="header">
+        <nav id="myHeader">
+            <a href="index.html"><img src="Resources/index/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="clubs.html">CLUBS</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="placement.html">PLACEMENTS</a></li>
+                    <li><a href="student_life.html">STUDENT LIFE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Student Life</h1>
+            <p>Don’t Be Just a Student, Be a Panther</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <!-- Script for fix header -->
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- To Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <br><br>
+    <div style="margin-left: 100px;margin-right: 100px;">
+        <h2 style="font-weight: 700;">Life at IIITN is More Than Just Going to Class</h2>
+        <p>
+            Walk to the Graham center and join a club, or go outside and take a seat with the yoga class on the lawn.
+            Join a fraternity or sorority and go Greek, or if you have the voice, apply at our radio station: the Roar.
+            Here at IIITN, we encourage you to get out there and become a member of the IIITN family.
+        </p>
+        <br>
+        <h2 style="font-weight: 700;">Student Involment</h2>
+        <p>
+            We're not just talkers, we're doers. Getting involved is about more than getting to know your 4,000 fellow
+            students. As Panthers, we work together to make a difference and we're always improving. Find your people
+            and start growing in any of our 10+ clubs and organizations.
+        </p>
+    </div>
+    <a href="clubs.html" style="margin-left: 100px;">See Clubs</a>
+    <br><br>
+    <!-- --- Campus --- -->
+    <section class="campus">
+        <div class="row">
+            <div class="campus-col">
+                <img src="Resources/index/london.png" alt="">
+                <div class="layer">
+                    <h3>Academic Block</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="Resources/index/newyork.png" alt="">
+                <div class="layer">
+                    <h3>Admin Block</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="Resources/index/washington.png" alt="">
+                <div class="layer">
+                    <h3>Hostel Block</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row-arrangement">
+        <br>
+        <div class="row-lines">
+            <div class="left">
+                <h2>Campus</h2>
+                <p>
+                    Your next adventure is on campus. Kayak offshore of Biscayne Bay Campus (BBC) among the mangroves.
+                    Spend a day roaming through over 300 acres of the lush Modesto A. Maidique Campus (MMC). There's so
+                    much to explore on campus. You need to see it for yourself.
+                </p>
+            </div>
+            <div class="right">
+                <img src="Resources/studentLife/2.jpg">
+            </div>
+        </div>
+        <div class="row-lines">
+            <div class="left">
+                <h2>Arts & Culture</h2>
+                <p>
+                    The Patricia & Phillip Frost Art Museum is open every day except Monday, so check out one of their
+                    exhibits. Immerse yourself in our Theatre department’s original stage plays. And there's always a
+                    concert going on at our School of Music.
+                </p>
+            </div>
+            <div class="right">
+                <img src="Resources/studentLife/4.jpeg">
+            </div>
+        </div>
+        <div class="row-lines">
+            <div class="left">
+                <h2>Recreation</h2>
+                <p>
+                    Whether you’re looking for a great workout, an outdoor experience or the rush of competing, FIU’s
+                    recreation options inspire a fit and healthy lifestyle. From ropes courses to group classes to
+                    weights, there's something for everyone.
+                </p>
+            </div>
+            <div class="right">
+                <img src="Resources/studentLife/5.jpg">
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="Events">
+        <h1>Events</h1>
+        <h4>Year-round Fun in the Tropical Sun</h4>
+        <br>
+        Here in South Florida the seasons don't change too much. But you'll know it's fall when football, volleyball and
+        soccer season arrive. It's also time for Homecoming, when you join your FIU family at tailgates and in the
+        stands to cheer our athletes, unleash your panther spirit at Panthermonium Concert and so much more.
+        <br><br><br>
+        In spring and summer, you can dance all night at Roarthon or party at Summerfest. Year-round, you'll see
+        musicians, celebrities and inspiring individuals who come to speak or perform right here on campus.
+        <div class="img-set">
+            <div class="img-set-col">
+                <img src="Resources/studentLife/event-1.jpeg" alt="">
+            </div>
+            <div class="img-set-col">
+                <img src="Resources/studentLife/event-2.jpeg" alt="">
+            </div>
+            <div class="img-set-col">
+                <img src="Resources/studentLife/event-3.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <footer>
+        <br>
+        <div class="foot-flex-parent">
+            <div class="foot-flex-child">
+                <span>About The School</span>
+                <br><br>
+                About The School
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab
+                minus
+                illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias
+                Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Rerum consequatur, expedita exercitationem
+                voluptates
+                possimus iste voluptas quibusdam.
+            </div>
+            <div class="foot-flex-child foot-link-div">
+                <span>Links</span> <br><br>
+                <a class="foot-link" href="index.html">HOME</a><br><br>
+                <a class="foot-link" href="college.html">ABOUT US</a><br><br>
+                <a class="foot-link" href="admission.html">ADMISSION</a><br><br>
+                <a class="foot-link" href="course.html">COURSES</a><br><br>
+                <a class="foot-link" href="clubs.html">CLUBS</a><br><br>
+
+
+            </div>
+            <div class="foot-flex-child">
+                <span>Contact Us</span>
+                <br><br>
+                Permanent Address: <br> Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni,
+                Village -
+                Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural), District Nagpur, Maharashtra- 441108
+                <br><br>
+                Phone: 725948XXXX
+                <br><br>
+                Mail: registrar@iiitn.ac.in
+                <br><br>
+                <div id='link'>
+                    <a href="" target="_blank" class="fa fa-ic fa-facebook"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-linkedin"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-twitter"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        Copyright © 2022 | All Rights Reserved. Indian Institute of Information Technology, Nagpur.Powered By Piyush & Ritika.
+        <br><br>
+    </footer>
+</body>
+
+</html>

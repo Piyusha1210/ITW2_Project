@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIITN</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="placement.css">
+    <link rel="icon" href="Resources/index/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="myfun()" onunload="myfunc()">
+    <script>
+        function myfun() {
+            alert("Hello User,\nWelcome To Our Placement Page.");
+        }
+    </script>
+    <section class="header">
+        <nav id="myHeader">
+            <a href="index.html"><img src="Resources/index/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="clubs.html">CLUBS</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="placement.html">PLACEMENTS</a></li>
+                    <li><a href="student_life.html">STUDENT LIFE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Welcome to IIITN Placemets </h1>
+            <p>Indian Institute of Information technology, Nagpur</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <!-- Script for fix header -->
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- To Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <br><br>
+    <section class="dir-msg">
+        <h1>Director's Message</h1>
+        The opportunity to enhance the technical capabilities and positive outlook on life of young students is a matter
+        of great satisfaction for academic institutions.
+    </section>
+    <br><br>
+    <section class="stats">
+        <hr>
+        <h1>Placements Statistics</h1>
+        <br>
+        <div class="img-stats">
+            <div class="stats-1">
+                <img width="100%" src="Resources/placements/2021-2.jfif" alt="">
+                <img width="100%" src="Resources/placements/2021-2.1.jfif" alt="">
+            </div>
+
+            <div class="stats-2">
+                <img width="100%" src="Resources/placements/prec2020.jpg" alt="">
+            </div>
+        </div>
+        <br><br>
+        <div class="stats-3">
+            <img src="Resources/placements/2021-3.jfif" alt="">
+            <br><br><br>
+            <a href="" class="stats-btn">More Statistics >></a>
+        </div>
+    </section>
+    <br><br>
+    <section class="recruiters">
+        <hr>
+        <h1>Past Recruiters</h1>
+        <div class="recr-row">
+            <div class="recr-col">
+                <img src="Resources/placements/1.jpg" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/2.png" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/4.png" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="recr-row">
+            <div class="recr-col">
+                <img src="Resources/placements/5.png" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/12.jpg" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/8.jpg" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="recr-row">
+            <div class="recr-col">
+                <img src="Resources/placements/9.jpg" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/10.png" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/11.png" alt="">
+            </div>
+            <div class="recr-col">
+                <img src="Resources/placements/6.png" alt="">
+            </div>
+        </div>
+        <br><br><br>
+
+    </section>
+    <footer>
+        <br>
+        <div class="foot-flex-parent">
+            <div class="foot-flex-child">
+                <span>About The School</span>
+                <br><br>
+                About The School
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab
+                minus
+                illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias
+                Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Rerum consequatur, expedita exercitationem
+                voluptates
+                possimus iste voluptas quibusdam.
+            </div>
+            <div class="foot-flex-child foot-link-div">
+                <span>Links</span> <br><br>
+                <a class="foot-link" href="index.html">HOME</a><br><br>
+                <a class="foot-link" href="college.html">ABOUT US</a><br><br>
+                <a class="foot-link" href="admission.html">ADMISSION</a><br><br>
+                <a class="foot-link" href="course.html">COURSES</a><br><br>
+                <a class="foot-link" href="clubs.html">CLUBS</a><br><br>
+
+
+            </div>
+            <div class="foot-flex-child">
+                <span>Contact Us</span>
+                <br><br>
+                Permanent Address: <br> Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni,
+                Village -
+                Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural), District Nagpur, Maharashtra- 441108
+                <br><br>
+                Phone: 725948XXXX
+                <br><br>
+                Mail: registrar@iiitn.ac.in
+                <br><br>
+                <div id='link'>
+                    <a href="" target="_blank" class="fa fa-ic fa-facebook"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-linkedin"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-twitter"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        Copyright © 2022 | All Rights Reserved. Indian Institute of Information Technology, Nagpur.Powered By Piyush & Ritika.
+        <br><br>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IIIT Nagpur</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="course.css">
+    <link rel="icon" href="Resources/index/logo.png">
+    <link rel="icon" href="Resources/index/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="myfun()" onunload="myfunc()">
+    <script>
+        function myfun() {
+            alert("Hello User,\nWelcome To Our Courses.");
+        }
+    </script>
+    <section class="header">
+        <nav id="myHeader">
+            <a href="index.html"><img src="Resources/index/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="clubs.html">CLUBS</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="placement.html">PLACEMENTS</a></li>
+                    <li><a href="student_life.html">STUDENT LIFE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Courses</h1>
+            <p>Indian Institute of Information technology, Nagpur</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+    <!-- Script for fix header -->
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- To Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <br><br>
+    <div class="whole-parent-div">
+
+        <div class="selector-div">
+            <div class="branch">
+                <h4>Branch</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Computer Science
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Information technology
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Electronics
+                    </li>
+
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Course</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Web Development
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        App Development
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Machine Learning
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        AR / VR
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Designing
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        IOT
+                    </li>
+
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Course type</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Basic
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Intermediate
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Advanced
+                    </li>
+
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Language</h4>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        C++
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Java
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Python
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Kotlin
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Swift
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        JavaScript
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Php
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <br><br>
+            <div class="branch">
+                <h4>Software</h4>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Bootstrap
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Git
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Linux
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        VS Code
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        WordPress
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <br><br>
+        </div>
+
+        <div class="card-holder-whole">
+            
+            <div class="course-card-row">
+                <div class="card course-card-col" style="width: 24rem;">
+                    <img src="Resources/Courses/course_card_1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text"> Web development is the work involved in developing a website for the
+                            Internet or an intranet. Web development can range from developing a simple single static
+                            page of plain text to complex web applications, electronic businesses, and social network
+                            services.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card course-card-col" style="width: 24rem;">
+                    <img src="Resources/Courses/course_card_2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">App Development</h5>
+                        <p class="card-text">Mobile app development is the act or process by which a mobile app is
+                            developed for mobile devices, such as personal digital assistants, enterprise digital
+                            assistants or mobile phones. These software applications are designed to run on mobile
+                            devices, such as a smartphone or tablet computer.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card-row">
+                <div class="card course-card-col" style="width: 24rem;">
+                    <img src="Resources/Courses/course_card_3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">Machine learning is a method of data analysis that automates analytical
+                            model building. It is a branch of artificial intelligence based on the idea that systems can
+                            learn from data, identify patterns and make decisions with minimal human intervention.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card course-card-col" style="width: 24rem;">
+                    <img src="Resources/Courses/course_card_4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AR/ VR/ MR</h5>
+                        <p class="card-text">
+                            Augmented reality (AR) adds digital elements to a live view often by using the camera on a
+                            smartphone. ... Virtual reality (VR) implies a complete immersion experience that shuts out
+                            the physical world.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card-row">
+
+                <div class="card course-card-col" style="width: 24rem;">
+                    <img src="Resources/Courses/course_card_5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">IOT</h5>
+                        <p class="card-text">The term IoT, or Internet of Things, refers to the collective network of
+                            connected devices and the technology that facilitates communication between devices and the
+                            cloud, as well as between the devices themselves.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card course-card-col" style="width: 24rem;">
+                    <img src="Resources/Courses/course_card_6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blockchain</h5>
+                        <p class="card-text">Blockchain is a system of recording information in a way that makes it
+                            difficult or
+                            impossible to change, hack, or cheat the system. A blockchain is essentially a digital
+                            ledger of transactions that is duplicated and distributed.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <footer>
+        <br>
+        <div class="foot-flex-parent">
+            <div class="foot-flex-child">
+                <span>About The School</span>
+                <br><br>
+                About The School
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab
+                minus
+                illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias
+                Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Rerum consequatur, expedita exercitationem
+                voluptates
+                possimus iste voluptas quibusdam.
+            </div>
+            <div class="foot-flex-child foot-link-div">
+                <span>Links</span> <br><br>
+                <a class="foot-link" href="index.html">HOME</a><br><br>
+                <a class="foot-link" href="college.html">ABOUT US</a><br><br>
+                <a class="foot-link" href="admission.html">ADMISSION</a><br><br>
+                <a class="foot-link" href="course.html">COURSES</a><br><br>
+                <a class="foot-link" href="clubs.html">CLUBS</a><br><br>
+
+
+            </div>
+            <div class="foot-flex-child">
+                <span>Contact Us</span>
+                <br><br>
+                Permanent Address: <br> Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni,
+                Village -
+                Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural), District Nagpur, Maharashtra- 441108
+                <br><br>
+                Phone: 725948XXXX
+                <br><br>
+                Mail: registrar@iiitn.ac.in
+                <br><br>
+                <div id='link'>
+                    <a href="" target="_blank" class="fa fa-ic fa-facebook"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-linkedin"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-twitter"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        Copyright © 2022 | All Rights Reserved. Indian Institute of Information Technology, Nagpur.Powered By Piyush & Ritika.
+        <br><br>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIITN</title>
+    <link rel="icon" href="Resources/index/logo.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="myfun()" onunload="myfunc()">
+    <script>
+        function myfun() {
+            alert("Hello User,\nWelcome To Our Home Page\nPlease Login to know more about us.");
+        }
+    </script>
+
+    <section class="header">
+        <nav id="myHeader">
+            <a href="index.html"><img src="Resources/index/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="clubs.html">CLUBS</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="placement.html">PLACEMENTS</a></li>
+                    <li><a href="student_life.html">STUDENT LIFE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>IIIT Nagpur</h1>
+            <p>Indian Institute of Information technology, Nagpur</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- To Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-- --- COURSE --- -->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum ipsam, cum nisi expedita,
+            voluptas vel similique ad quisquam, sapiente magnam voluptatem officia debitis voluptatum culpa unde!
+            Molestiae fugiat accusantium eligendi dignissimos eius mollitia cumque quis nulla, ad voluptas nostrum
+            voluptatum unde iure odit eos veritatis molestias necessitatibus. Iure, aliquam!</p>
+        <br><br>
+        <div class="row">
+            <div class="course-col">
+                <h3>B. Tech</h3>
+                <p>B. Tech - Bachelor of Technology (BTech) is a professional undergraduate engineering degree programme
+                    awarded
+                    to candidates after they complete four years of study in the field. Engineering is one of the most
+                    popular courses in India and there are many institutes that offer the course to aspiring students
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>M. Tech</h3>
+                <p>M. Tech - Master of Technology which is one of the highly popular and credible post graduate program
+                    in respective discipline. M. Tech is among the universal accepted post graduate degree program being
+                    offered by all top rated universities and colleges. ... Tech courses are equivalent to M.S Degrees
+                    and M.</p>
+            </div>
+            <div class="course-col">
+                <h3>PHD</h3>
+                <p>PHD - PhD or Doctorate of Philosophy is an abbreviation of the Latin phrase 'philosophiae doctor'.
+                    A PhD degree typically involves students independently conducting original and significant research
+                    in a specific field or subject, before producing a publication-worthy thesis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Campus --- -->
+    <div class="campus-bg">
+        <section class="campus">
+            <h1>Our Campus</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum ipsam, cum nisi expedita,
+                voluptas vel similique ad quisquam, sapiente magnam voluptatem officia debitis voluptatum culpa unde!
+                Molestiae fugiat accusantium eligendi dignissimos eius mollitia cumque quis nulla, ad voluptas nostrum
+                voluptatum.
+            </p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="Resources/index/london.png" alt="">
+                    <div class="layer">
+                        <h3>Academic Block</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="Resources/index/newyork.png" alt="">
+                    <div class="layer">
+                        <h3>Admin Block</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="Resources/index/washington.png" alt="">
+                    <div class="layer">
+                        <h3>Hostel Block</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <br><br>
+    </div>
+
+    <!-- --- Facilities --- -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum ipsam, cum nisi expedita,
+            voluptas vel similique ad quisquam, sapiente magnam voluptatem officia debitis voluptatum culpa unde!
+            Molestiae fugiat accusantium eligendi dignissimos eius mollitia cumque quis nulla, ad voluptas nostrum
+            voluptatum.
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Resources/index/library.png" alt="">
+                <h3>Library</h3>
+                <p>Library Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum ipsam, cum nisi
+                    expedita,
+                    voluptas
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Resources/index/basketball.png" alt="">
+                <h3>Sports & Gym</h3>
+                <p>Sports Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum ipsam, cum nisi
+                    expedita,
+                    voluptas
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Resources/index/cafeteria.png" alt="">
+                <h3>Cafeteria</h3>
+                <p>Cafeteria Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum ipsam, cum nisi
+                    expedita,
+                    voluptas
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Testimonials --- -->
+    <div class="campus-bg">
+        <section class="testimonials">
+            <h1>What our Students Says</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum ipsam, cum nisi expedita,
+                voluptas vel simi.
+            </p>
+            <div class="row">
+                <div class="testimonials-col">
+                    <img src="Resources/index/user2.jpg" alt="">
+                    <div class="">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellat rerum suscipit,
+                            facere a
+                            molestiae ipsam quaerat, autem nemo alias quis similique velit maxime labore. Cumque
+                            exercitationem non voluptates aspernatur!</p>
+                        <h3>Piyush</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                <div class="testimonials-col">
+                    <img src="Resources/index/user1.jpg" alt="">
+                    <div class="">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellat rerum suscipit,
+                            facere a
+                            molestiae ipsam quaerat, autem nemo alias quis similique velit maxime labore. Cumque
+                            exercitationem non voluptates aspernatur!</p>
+                        <h3>Ritika</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <br>
+        <div class="foot-flex-parent">
+            <div class="foot-flex-child">
+                <span>About The School</span>
+                <br><br>
+                About The School
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab
+                minus
+                illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias
+                Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Rerum consequatur, expedita exercitationem
+                voluptates
+                possimus iste voluptas quibusdam.
+            </div>
+            <div class="foot-flex-child foot-link-div">
+                <span>Links</span> <br><br>
+                <a class="foot-link" href="index.html">HOME</a><br><br>
+                <a class="foot-link" href="college.html">ABOUT US</a><br><br>
+                <a class="foot-link" href="admission.html">ADMISSION</a><br><br>
+                <a class="foot-link" href="course.html">COURSES</a><br><br>
+                <a class="foot-link" href="clubs.html">CLUBS</a><br><br>
+
+
+            </div>
+            <div class="foot-flex-child">
+                <span>Contact Us</span>
+                <br><br>
+                Permanent Address: <br> Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni,
+                Village -
+                Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural), District Nagpur, Maharashtra- 441108
+                <br><br>
+                Phone: 725948XXXX
+                <br><br>
+                Mail: registrar@iiitn.ac.in
+                <br><br>
+                <div id='link'>
+                    <a href="" target="_blank" class="fa fa-ic fa-facebook"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-linkedin"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-twitter"></a>
+                    <a href="" target="_blank" class="fa fa-ic fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        Copyright © 2022 | All Rights Reserved. Indian Institute of Information Technology, Nagpur.Powered By Piyush &
+        Ritika.
+        <br><br>
+    </footer>
+
+</body>
+
+</html>

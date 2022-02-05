@@ -1,0 +1,96 @@
+.text-box h1{
+    font-size: 42px;
+}
+.header{
+    
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Resources/placements/banner.png);
+}
+.dir-msg
+{
+    width: 80%;
+    margin: auto;
+}
+.stats{
+    width: 90%;
+    margin: auto;
+}
+.stats h1{
+    text-align: center;
+}
+.img-stats{
+    display: flex;
+    justify-content: space-between;
+}
+.stats-1{
+    width: 48%;
+    /* border: 1px solid gray; */
+    transition: 0.5s;
+}
+.stats-2{
+    width: 48%;
+    /* border: 1px solid gray; */
+    transition: 0.5s;
+}
+.stats-3{
+    text-align: center;
+}
+.stats-3 img{
+    width: 49%;
+    /* border: 1px solid gray; */
+    transition: 0.5s;
+}
+.stats-1:hover{
+    box-shadow: gray 0px 0px 20px 10px;
+}
+.stats-2:hover{
+    box-shadow: gray 0px 0px 20px 10px;
+}
+.stats-3 img:hover{
+    box-shadow: gray 0px 0px 20px 10px;
+}
+.stats-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;    
+}
+.stats-btn:hover{
+    background-color: rgb(233, 172, 59);
+}
+.recruiters{
+    width: 80%;
+    margin: auto;
+}
+.recruiters h1{
+    text-align: center;
+}
+.recr-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.recr-col{
+    border-radius: 10px;
+    width: 20%;
+    /* background: #f3f2f2; */
+    /* border-radius: 10px; */
+    margin-bottom: 3%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    transition: 0.5s;
+    box-shadow: 0px 2px 10px 1px rgb(148, 147, 147);
+}
+.recr-col:hover{
+    
+  box-shadow: 0px 4px 15px 7px rgb(148, 147, 147);
+}
+.recr-col img{
+    border-radius: 10px;
+    width: 100%;
+}

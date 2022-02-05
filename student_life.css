@@ -1,0 +1,133 @@
+/* --- CAMPUS --- */
+.campus{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.layer:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+.header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Resources/studentLife/cover.jpeg);
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-child {
+    /*background-color:#f8f9fa;*/
+    padding-left: 30px;
+    margin: 0px;
+    width: 400px;
+    /*border-radius: 20px;*/
+
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 2px 6px 1px rgb(148, 147, 147);
+}
+
+.na {
+    text-decoration: none;
+    color: purple;
+    border: 0px;
+    margin: 8px;
+    font-weight: 500;
+}
+
+
+.row-arrangement
+{
+    background-color: rgb(246, 246, 248);
+    margin-top: 40px;
+    padding: 20px;
+}
+.row-lines
+{
+    /* margin-left: 200px; */
+    width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.left{
+    width: 60%;
+}
+.right
+{
+    width: 30%;
+}
+.right img{
+    width: 100%;
+}
+
+.Events{
+    width: 80%;
+    margin: auto;
+}
+.img-set{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.img-set-col{
+    flex-basis: 32%;
+}
+.img-set-col img{
+    width: 100%;
+}
+@media(max-width: 700px)
+{
+    .img-set{
+        flex-direction: column;
+    }
+    .img-set-col{
+        margin-bottom: 20px;
+    }
+}
